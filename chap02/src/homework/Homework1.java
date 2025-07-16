@@ -21,6 +21,6 @@ public class Homework1 {
 	}
 
 }
-
+//Homework 주소 : https://devkgn24.notion.site/149fda8bae5780cc9497f6d5d179ac38
 //String str = "abcde";
 //System.out.println(str.charAt(2)); //문자열 추출하는방법
