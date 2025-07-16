@@ -17,3 +17,4 @@ public class Homework6 {
 	}
 
 }
+//git staging test
