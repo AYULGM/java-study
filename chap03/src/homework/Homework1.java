@@ -10,7 +10,9 @@ public class Homework1 {
 		System.out.print("말해보세요 : ");
 		String say = sc.nextLine();
 		
-		String Bird = (say.equals("간다") ? "온다" : "간다" );
+		String Bird = (say.equals("간다") ? "온다" : "간다" ); // 만약 say가 null이면 에러남
+//      String Bird = ("간다".equals(say) ? "온다" : "간다" ); 
+		// "간다"는 절대 null이 아니라 에러안나고 false로 처리됨 챗지피티는 위에 문장을 권장함
 		System.out.println("앵무새 :" + Bird);
 
 	}

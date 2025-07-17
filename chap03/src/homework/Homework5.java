@@ -8,11 +8,13 @@ public class Homework5 {
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.print("주민번호(-) : ");
-		char str = sc.nextLine().charAt();
+		char genderCode = sc.nextLine().charAt(7);
 		
-		String gender = str.charAt ?
+		String gender = ( genderCode == '1' || genderCode == '3' ) 
+						? "남성" 
+						: (( genderCode == '2' || genderCode == '4' ) ? "여성" : "잘못된 값");
 		
-
+		System.out.println("입력하신 주민번호는 " + gender + "입니다.");
 	}
 
 }
