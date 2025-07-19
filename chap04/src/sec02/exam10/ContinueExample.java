@@ -33,12 +33,14 @@ public class ContinueExample {
 		
 		System.out.print("메시지를 보내주세요 : ");
 		String message = sc.nextLine();
-
-		//여기서부터 30분 고민했는데 모르겠어서 챗 gpt 씀 
+// 여기서부터 고민하다 몰라서 gpt 돌림
 		   String result = ""; // 공백 제거된 문자열 저장할 변수
 
 	        for (int i = 0; i < message.length(); i++) {
-	            char ch = message.charAt(i);
+	            char ch = message.charAt(i); // 입력받은 message 문자열에서 문자 하나씩 읽음
+	            // 다시풀때 나는 실수로 char ch = sc.nextLine().charAt(i) 했는데 gpt에 물어보니
+	            // 반복문 돌 때마다 새로 입력을 기다림 / 즉, 루프 돌 때마다 입력창 뜸
+	            // 사용자가 5글자 입력했다면, for문은 5번 다시 입력을 요구함 → 매우 이상한 동작
 	            if (ch == ' ') {
 	                continue; // 공백이면 건너뛰기
 	            }
