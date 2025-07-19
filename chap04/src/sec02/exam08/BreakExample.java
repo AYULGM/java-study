@@ -22,15 +22,20 @@ public class BreakExample {
 //		[출력]
 //		45까지의 합: 1035
 		
-		int sum,num=0;
+		
+		System.out.println("\n------Quiz--------\n");
+		int sum=0;
+		int num=0;
 		
 		while (true) {
 			num ++;
-			sum += num;
+			sum = sum + num;
 			if(sum >= 1000) {
+				System.out.println("합계가 1000이 넘는 순간의 num: " + num);
 				break;
 			}
 		}
+		System.out.println("1부터 " + num + "까지의 합 : " + sum);
 		
 		
 		

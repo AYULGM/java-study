@@ -1,5 +1,7 @@
 package sec02.exam10;
 
+import java.util.Scanner;
+
 public class ContinueExample {
 
 	public static void main(String[] args) {
@@ -25,6 +27,26 @@ public class ContinueExample {
 //		
 //		[출력]
 //		영희야생일축하해!
+		System.out.println("\n-------Quiz-------\n");
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("메시지를 보내주세요 : ");
+		String message = sc.nextLine();
+
+		//여기서부터 30분 고민했는데 모르겠어서 챗 gpt 씀 
+		   String result = ""; // 공백 제거된 문자열 저장할 변수
+
+	        for (int i = 0; i < message.length(); i++) {
+	            char ch = message.charAt(i);
+	            if (ch == ' ') {
+	                continue; // 공백이면 건너뛰기
+	            }
+	            result += ch; // 공백이 아니면 추가
+	        }
+	        System.out.println(result);
+
+		
 	}
 
 }
