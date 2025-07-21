@@ -16,6 +16,13 @@ public class Homework3 {
 		System.out.print("세 번째 정수 : ");
 		int num3 = sc.nextInt();
 		
+		/* 선생님이 한것 
+		 * int min = num1;
+		 * if (min > num2) min = num2;
+		 * if (min > num3) min = num3;
+		 * if가 한줄이면 괄호 생략가능
+		 */
+		
 		//세 수 중에 num1이 가장 작은 수라면
 		if(num1 < num2) {
 			if (num1 <num3) {

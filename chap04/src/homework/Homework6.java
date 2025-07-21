@@ -22,7 +22,26 @@ public class Homework6 {
 			
 		
 		int total = s1+s2+d3+p4+i5;
-		double average = total / 5;
+		double average = total / 5.0; // 이것도 5말고 5.0으로 해야 소숫점 아래값이 안짤리는데 실수함
+		System.out.println("average = " + average);
+		
+		/* 선생님이 쓴 답 
+		 * if (design < 40) {
+        	System.out.println("소프트웨어설계 과목 과락으로 불합격입니다.");
+        } else if (dev < 40) {
+            System.out.println("소프트웨어개발 과목 과락으로 불합격입니다.");
+        } else if (db < 40) {
+            System.out.println("데이터베이스구축 과목 과락으로 불합격입니다.");
+        } else if (lang < 40) {
+            System.out.println("프로그래밍언어활용 과목 과락으로 불합격입니다.");
+        } else if (system < 40) {
+            System.out.println("정보시스템구축관리 과목 과락으로 불합격입니다.");
+        } else if (avg < 60) {
+            System.out.println("평균 점수 60점 미만으로 불합격입니다.");
+        } else {
+        	System.out.println("합격을 축하합니다!");
+        }
+		 */
 		
 		// 과락도 없고 평균도 60점을 넘고
 		if(s1>=40 && s2>=40 && d3>=40 && p4 >=40 && i5 >=40 && average>=60) {

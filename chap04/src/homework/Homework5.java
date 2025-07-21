@@ -15,6 +15,14 @@ public class Homework5 {
 		System.out.print("(1~5) 중에 하나를 선택해주세요 : ");
 		int num = sc.nextInt();
 		
+		
+		//Early Return
+		/*if (num <= 0) {
+        	System.out.println("양수만 입력해주세요.");
+        	return;
+        }
+		*/ // 다음부터 early return 하는 습관 들여야할듯
+		
 		if(num == 1) {
 			System.out.println("스쿼트 운동 시간입니다.");
 		}

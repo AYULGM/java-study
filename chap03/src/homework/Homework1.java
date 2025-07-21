@@ -8,11 +8,13 @@ public class Homework1 {
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.print("말해보세요 : ");
-		String say = sc.nextLine();
+		String input = sc.nextLine();
 		
-		String Bird = (say.equals("간다") ? "온다" : "간다" ); // 만약 say가 null이면 에러남
-//      String Bird = ("간다".equals(say) ? "온다" : "간다" ); 
+		String Bird = (input.equals("간다") ? "온다" : "간다" ); // 만약 say가 null이면 에러남
+//      String Bird = ("간다".equals(input) ? "온다" : "간다" ); // 이게 더 좋은코드
 		// "간다"는 절대 null이 아니라 에러안나고 false로 처리됨 챗지피티는 위에 문장을 권장함
+		// 변수 쪽에 equals()를 호출하면, input이 null 일경우 예외(NPE)가 발생할 수 있음
+		// 리터럴이나 상수를 앞에 두면, input이 null이어도 안전하게 비교 가능(null-safe)
 		System.out.println("앵무새 :" + Bird);
 
 	}

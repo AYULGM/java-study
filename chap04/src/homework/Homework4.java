@@ -10,6 +10,9 @@ public class Homework4 {
 		System.out.print("수집된 코드 : ");
 		int code = sc.nextInt();
 		
+		//String message; 이렇게 해놓는 버릇이 필요할듯함
+		// 둘다 맞는 방법인데 코드 상으로 깔끔해짐
+		
 		switch (code) {
 		case 400:
 			System.out.println("잘못된 요청입니다.");

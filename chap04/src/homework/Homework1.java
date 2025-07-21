@@ -11,21 +11,29 @@ public class Homework1 {
 		System.out.print("나이를 입력하세요 : ");
 		int age = sc.nextInt();
 		
-		if(age > 0 && age < 3) {
+		int fee;
+		if(age < 3) {
 			System.out.println("당신의 놀이동산 요금은 0원입니다.");
+			fee = 0;
 		}
-		else if (age >=3 && age <= 12) {
-			System.out.println("당신의 놀이동산 요금은 10000원입니다.");
+		else if (age <= 12) { //age >=3 && age <= 12 보다는 그냥 age<=12라 적는게 나을듯
+
+			fee = 10000;
 		}
-		else if (age >=13 && age <= 18) {
-			System.out.println("당신의 놀이동산 요금은 20000원입니다.");
+		else if (age <= 18) {
+
+			fee = 20000;
 		}
-		else if (age >=19 && age <= 64) {
-			System.out.println("당신의 놀이동산 요금은 30000원입니다.");
+		else if (age <= 64) {
+
+			fee = 30000;
 		}
 		else {
-			System.out.println("당신의 놀이동산 요금은 0원입니다.");
+
+			fee = 0;
 		}
+		
+		System.out.println("당신의 놀이동산 요금은 " + fee +"원입니다.");
 		
 
 	}
