@@ -2,13 +2,12 @@ package sec02.exam05;
 
 public class MainStringArrayArgument {
 
-	public static void main(String[] args) { // 받는쪽은 parameter(=매개변수)
-		System.out.println("args 의 개수는 = " + args.length);
+	public static void main(String[] args) {
+		System.out.println(args.length);
 		
-		// 툴에서 직접 실행할 때 argument(=매개값,=인자값,=인수)를 주는 방법: Run Configurations > Arguments
-		// 들어가면 구분자는 공백
+		// 툴에서 직접 실행할 때 argument 주는 방법: Run Configurations > Arguments
 		
-		// main 메소드의 String[] 배열 매개변수 활용하기  - 잘 쓸일은 없다고 하심
+		// main 메소드의 String[] 배열 매개변수 활용하기
 		if (args.length != 2) {
 			System.out.println("값의 수가 부족합니다.");
 //			return; // 메소드 종료
@@ -25,10 +24,6 @@ public class MainStringArrayArgument {
 		
 		int result = num1 + num2;
 		System.out.println(num1 + " + " + num2 + " = " + result);
-		
-		
-		
-		
 	}
 
 }
