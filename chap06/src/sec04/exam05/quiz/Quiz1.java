@@ -21,6 +21,9 @@ public class Quiz1 {
 		
 		Calculator calc = new Calculator();
 		System.out.println(calc.getEvenTotal(begin, end));
+		
+		
+		
 	}
 
 }
