@@ -15,8 +15,8 @@ public class Quiz4 {
 		System.out.print("반 전체 학생이 몇 명인지: ");
 		int input = sc.nextInt();
 
-		sc.nextLine();
-
+		sc.nextLine(); // 개행 문자 제거(버퍼 비우기)
+ 
 		String[] student = new String[input];
 
 		System.out.println("학생은 " + input + " 명입니다.");
@@ -25,8 +25,17 @@ public class Quiz4 {
 
 			student[i] = sc.nextLine();
 		}
+		// 공식화: (int) (Math.random() * (최대값 - 최소값 + 1)) + 최소값;
 		String Choice = student[(int) (Math.random() * student.length)];
-
+		
+//		int count = 5;
+//		while (true) { 쌤이 만드신 5 4 3 2 1 
+//			System.out.println(count--);
+//			Thread.sleep(1000); // 현재 스레드를 일정 시간 정지 1000ms = 1s
+//			// 주의: 현재 스레드를 멈추기 때문에 사용 주의!
+//			if (count == 0) break; 
+//		}
+		
 		System.out.println("커피 쏠 사람은: " + Choice);
 	}
 
