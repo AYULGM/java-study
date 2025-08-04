@@ -15,7 +15,7 @@ public class EnumWeekExample {
 		// 숫자를 열거 상수로 변환해서 변수에 대입
 		switch (week) {
 			// 열거 타입 변수에는 정의된 열거 상수 값만 저장 가능
-			case 1: today = Week.SUNDAY; break;
+			case 1: 	today = Week.SUNDAY; break;
 			case 2: 	today = Week.MONDAY; break;
 			case 3: 	today = Week.TUESDAY; break;
 			case 4: 	today = Week.WEDNESDAY; break;
@@ -40,6 +40,7 @@ public class EnumWeekExample {
 		// 2. 값들이 명시적으로 정의되어 있어 가독성이 올라감(코드를 읽을 때 쉽게 이해 가능)
 		// 3. 값이 추가되거나 변경되는 경우 한 곳에서만 변경하면 되기 때문에 유지보수(관리)가 용이
 		// 4. 자동 완성 지원
+		
 	}
 
 }
