@@ -45,6 +45,7 @@ public class StudentListExample {
 		
 		// sort()는 두 대상을 비교하여 자리 바꿈을 반복함
 		Collections.sort(studentList); // 내부적으로 재정의한 compareTo()를 기준으로 정렬 (재정의안하면 오류)
+		// 자리를 바꿔주는건 sort가 해주는 일이고 어떤 기준으로 정렬할것인지 내가 compareTo로 재정의 해줘야함
 		// String 클래스 안에 compareTo()가 잘 재정의되어있듯이
 		// 변수 studentList는 타입이 Student니까 재정의 해줘야함
 		System.out.println("나이 기준 기본 정렬");

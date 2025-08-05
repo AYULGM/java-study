@@ -43,7 +43,7 @@ public class Run {
 	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		
+		// 내 코드는 미완성된 코드임 수정이 필요함
 		List<String> seats = new ArrayList<String>();
 		
 		seats.add("A2");

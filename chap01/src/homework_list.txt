@@ -57,4 +57,7 @@ https://devkgn24.notion.site/String-15afda8bae5780c59b45cfda95dd7d99
 chap13. 
 1) List 과제
 https://devkgn24.notion.site/158fda8bae578064ab5aceba2b8cb6d6
+설명은 너무 장황하고 웬만하면 주석만 보고도 푸니까. 어렵게 생각하지말고 주석보면서 하나하나 풀기 
 
+2) Set 과제
+https://devkgn24.notion.site/159fda8bae5780b98da8ed1e035d0586
