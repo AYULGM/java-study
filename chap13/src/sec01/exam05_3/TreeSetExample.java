@@ -4,7 +4,7 @@ import java.util.Collections;
 import java.util.Set;
 import java.util.TreeSet;
 
-public class TreeSetExample { // TreeSet과 LinkedHashSet는 개발하면서 쓸일이 거의없어 차이점만 알아두기
+public class TreeSetExample {
 
 	public static void main(String[] args) {
 		// TreeSet
@@ -14,7 +14,6 @@ public class TreeSetExample { // TreeSet과 LinkedHashSet는 개발하면서 쓸
 //		Set<String> set = new TreeSet<String>();
 		// 내림차순으로 정렬하고 싶다면 TreeSet 생성자에 Comparator를 매개값으로 전달
 		Set<String> set = new TreeSet<String>(Collections.reverseOrder());
-
 		
 		set.add("동");
 		set.add("서");
@@ -22,5 +21,5 @@ public class TreeSetExample { // TreeSet과 LinkedHashSet는 개발하면서 쓸
 		set.add("북");
 		System.out.println(set);
 	}
-//git test
+
 }
