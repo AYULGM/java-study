@@ -22,5 +22,5 @@ public class TreeSetExample { // TreeSet과 LinkedHashSet는 개발하면서 쓸
 		set.add("북");
 		System.out.println(set);
 	}
-
+//git test
 }
