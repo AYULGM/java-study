@@ -43,7 +43,7 @@ public class Run {
 	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		// 내 코드는 미완성된 코드임 수정이 필요함
+		// 내 코드는 미완성된 코드임 수정이 필요함 -> 수정했음
 		List<String> seats = new ArrayList<String>();
 		
 		seats.add("A2");
@@ -60,31 +60,32 @@ public class Run {
 		System.out.print("예약 좌석: ");
 		String reservate = sc.nextLine();
 		
+		boolean found = false;
 		for (int i = 0 ; i < seats.size() ; i++) {
 			if(reservate.equals(seats.get(i))) {
-				seats.add(i,reservate);
 				seats.set(i,reservate + "(예약)");
-			}
-			else { 
-				System.out.println(reservate + "은(는) 존재하지 않는 좌석입니다.");
+				found = true;
 				break;
 			}
 		}
+		if (!found) { // else를 써버리면 못찾을때마다 내부반복문에서 계속 출력하니까 한번만 하기위해 아래코드를씀
+				System.out.println(reservate + "은(는) 존재하지 않는 좌석입니다.");
+			}
+		
 		System.out.println("좌석 예약 후: " + seats);
 
 
 		System.out.print("삭제 좌석: ");
 		String delete = sc.nextLine();
 		
-		for (int j = 0 ; j < seats.size() ; j++) {
-			if(delete.equals(seats.get(j))) {
+			if(seats.contains(delete)) {
 				seats.remove(delete);
+
 			}
 			else { 
 				System.out.println(delete + "좌석은 목록에 없습니다.");
-				break;
 			}
-		}
+			
 		System.out.println("좌석 삭제 후: " + seats);
 
 		
