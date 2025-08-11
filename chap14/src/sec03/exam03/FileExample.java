@@ -87,7 +87,7 @@ public class FileExample {
 		// Temp 폴더 정보 출력하기
 		File temp = new File("C:/Temp");
 		
-		if (temp.exists() && temp.isDirectory()) { // 존재하고 , 폴더여야 그 하위디렉토리를 가져올수있음(파일이면 못가져옴)
+		if (temp.exists() && temp.isDirectory()) { // 존재하고 , 폴더여야 그 하위디렉토리를 가져올수있음(파일이면 isFile()로 해야겠지..)
 			// Temp 폴더에 있는 파일 및 하위 폴더를 File 배열로 리턴
 			File[] contents = temp.listFiles(); // 하나하나 파일 배열로 만들어버림 /그냥 list는 String 타입으로 이름을 반환
 			
